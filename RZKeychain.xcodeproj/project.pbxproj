@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBA1FB2914B75899005A61B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA1FB2814B75899005A61B0 /* Foundation.framework */; };
+		CBA1FB2F14B7589A005A61B0 /* RZKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1FB2E14B7589A005A61B0 /* RZKeychain.m */; };
+		CBA1FB3714B7589A005A61B0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA1FB3614B7589A005A61B0 /* SenTestingKit.framework */; };
+		CBA1FB3914B7589A005A61B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA1FB3814B7589A005A61B0 /* UIKit.framework */; };
+		CBA1FB3A14B7589A005A61B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA1FB2814B75899005A61B0 /* Foundation.framework */; };
+		CBA1FB3D14B7589A005A61B0 /* libRZKeychain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA1FB2514B75899005A61B0 /* libRZKeychain.a */; };
+		CBA1FB4314B7589A005A61B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBA1FB4114B7589A005A61B0 /* InfoPlist.strings */; };
+		CBA1FB4614B7589A005A61B0 /* RZKeychainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA1FB4514B7589A005A61B0 /* RZKeychainTests.m */; };
+		CBA1FB5914B75A73005A61B0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA1FB5814B75A73005A61B0 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBA1FB3B14B7589A005A61B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBA1FB1C14B75899005A61B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBA1FB2414B75899005A61B0;
+			remoteInfo = RZKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBA1FB2514B75899005A61B0 /* libRZKeychain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRZKeychain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA1FB2814B75899005A61B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBA1FB2C14B7589A005A61B0 /* RZKeychain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RZKeychain-Prefix.pch"; sourceTree = "<group>"; };
+		CBA1FB2D14B7589A005A61B0 /* RZKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZKeychain.h; sourceTree = "<group>"; };
+		CBA1FB2E14B7589A005A61B0 /* RZKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZKeychain.m; sourceTree = "<group>"; };
+		CBA1FB3514B7589A005A61B0 /* RZKeychainTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZKeychainTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA1FB3614B7589A005A61B0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CBA1FB3814B7589A005A61B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CBA1FB4014B7589A005A61B0 /* RZKeychainTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RZKeychainTests-Info.plist"; sourceTree = "<group>"; };
+		CBA1FB4214B7589A005A61B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBA1FB4414B7589A005A61B0 /* RZKeychainTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RZKeychainTests.h; sourceTree = "<group>"; };
+		CBA1FB4514B7589A005A61B0 /* RZKeychainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RZKeychainTests.m; sourceTree = "<group>"; };
+		CBA1FB5814B75A73005A61B0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBA1FB2214B75899005A61B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA1FB2914B75899005A61B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA1FB3114B7589A005A61B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA1FB5914B75A73005A61B0 /* Security.framework in Frameworks */,
+				CBA1FB3714B7589A005A61B0 /* SenTestingKit.framework in Frameworks */,
+				CBA1FB3914B7589A005A61B0 /* UIKit.framework in Frameworks */,
+				CBA1FB3A14B7589A005A61B0 /* Foundation.framework in Frameworks */,
+				CBA1FB3D14B7589A005A61B0 /* libRZKeychain.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBA1FB1A14B75899005A61B0 = {
+			isa = PBXGroup;
+			children = (
+				CBA1FB5814B75A73005A61B0 /* Security.framework */,
+				CBA1FB2A14B7589A005A61B0 /* RZKeychain */,
+				CBA1FB3E14B7589A005A61B0 /* RZKeychainTests */,
+				CBA1FB2714B75899005A61B0 /* Frameworks */,
+				CBA1FB2614B75899005A61B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBA1FB2614B75899005A61B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBA1FB2514B75899005A61B0 /* libRZKeychain.a */,
+				CBA1FB3514B7589A005A61B0 /* RZKeychainTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBA1FB2714B75899005A61B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBA1FB2814B75899005A61B0 /* Foundation.framework */,
+				CBA1FB3614B7589A005A61B0 /* SenTestingKit.framework */,
+				CBA1FB3814B7589A005A61B0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBA1FB2A14B7589A005A61B0 /* RZKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				CBA1FB2D14B7589A005A61B0 /* RZKeychain.h */,
+				CBA1FB2E14B7589A005A61B0 /* RZKeychain.m */,
+				CBA1FB2B14B7589A005A61B0 /* Supporting Files */,
+			);
+			path = RZKeychain;
+			sourceTree = "<group>";
+		};
+		CBA1FB2B14B7589A005A61B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBA1FB2C14B7589A005A61B0 /* RZKeychain-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBA1FB3E14B7589A005A61B0 /* RZKeychainTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBA1FB4414B7589A005A61B0 /* RZKeychainTests.h */,
+				CBA1FB4514B7589A005A61B0 /* RZKeychainTests.m */,
+				CBA1FB3F14B7589A005A61B0 /* Supporting Files */,
+			);
+			path = RZKeychainTests;
+			sourceTree = "<group>";
+		};
+		CBA1FB3F14B7589A005A61B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBA1FB4014B7589A005A61B0 /* RZKeychainTests-Info.plist */,
+				CBA1FB4114B7589A005A61B0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CBA1FB2314B75899005A61B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CBA1FB2414B75899005A61B0 /* RZKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA1FB4914B7589A005A61B0 /* Build configuration list for PBXNativeTarget "RZKeychain" */;
+			buildPhases = (
+				CBA1FB2114B75899005A61B0 /* Sources */,
+				CBA1FB2214B75899005A61B0 /* Frameworks */,
+				CBA1FB2314B75899005A61B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZKeychain;
+			productName = RZKeychain;
+			productReference = CBA1FB2514B75899005A61B0 /* libRZKeychain.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CBA1FB3414B7589A005A61B0 /* RZKeychainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBA1FB4C14B7589A005A61B0 /* Build configuration list for PBXNativeTarget "RZKeychainTests" */;
+			buildPhases = (
+				CBA1FB3014B7589A005A61B0 /* Sources */,
+				CBA1FB3114B7589A005A61B0 /* Frameworks */,
+				CBA1FB3214B7589A005A61B0 /* Resources */,
+				CBA1FB3314B7589A005A61B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBA1FB3C14B7589A005A61B0 /* PBXTargetDependency */,
+			);
+			name = RZKeychainTests;
+			productName = RZKeychainTests;
+			productReference = CBA1FB3514B7589A005A61B0 /* RZKeychainTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBA1FB1C14B75899005A61B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Raizlabs Corporation";
+			};
+			buildConfigurationList = CBA1FB1F14B75899005A61B0 /* Build configuration list for PBXProject "RZKeychain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CBA1FB1A14B75899005A61B0;
+			productRefGroup = CBA1FB2614B75899005A61B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBA1FB2414B75899005A61B0 /* RZKeychain */,
+				CBA1FB3414B7589A005A61B0 /* RZKeychainTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBA1FB3214B7589A005A61B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA1FB4314B7589A005A61B0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CBA1FB3314B7589A005A61B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBA1FB2114B75899005A61B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA1FB2F14B7589A005A61B0 /* RZKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA1FB3014B7589A005A61B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA1FB4614B7589A005A61B0 /* RZKeychainTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBA1FB3C14B7589A005A61B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBA1FB2414B75899005A61B0 /* RZKeychain */;
+			targetProxy = CBA1FB3B14B7589A005A61B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBA1FB4114B7589A005A61B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBA1FB4214B7589A005A61B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBA1FB4714B7589A005A61B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBA1FB4814B7589A005A61B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBA1FB4A14B7589A005A61B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RZKeychain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZKeychain/RZKeychain-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CBA1FB4B14B7589A005A61B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RZKeychain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZKeychain/RZKeychain-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CBA1FB4D14B7589A005A61B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZKeychain/RZKeychain-Prefix.pch";
+				INFOPLIST_FILE = "RZKeychainTests/RZKeychainTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CBA1FB4E14B7589A005A61B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RZKeychain/RZKeychain-Prefix.pch";
+				INFOPLIST_FILE = "RZKeychainTests/RZKeychainTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBA1FB1F14B75899005A61B0 /* Build configuration list for PBXProject "RZKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA1FB4714B7589A005A61B0 /* Debug */,
+				CBA1FB4814B7589A005A61B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA1FB4914B7589A005A61B0 /* Build configuration list for PBXNativeTarget "RZKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA1FB4A14B7589A005A61B0 /* Debug */,
+				CBA1FB4B14B7589A005A61B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBA1FB4C14B7589A005A61B0 /* Build configuration list for PBXNativeTarget "RZKeychainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBA1FB4D14B7589A005A61B0 /* Debug */,
+				CBA1FB4E14B7589A005A61B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBA1FB1C14B75899005A61B0 /* Project object */;
+}
