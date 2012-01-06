@@ -53,4 +53,49 @@
     SecItemDelete((CFDictionaryRef)keychainQuery);
 }
 
++ (void) setValue:(id)value forKey:(NSString*)key inService:(NSString*)service
+{
+    // load the service
+    id serviceObj = [self load:service];
+    
+    // if there is no object, create one. 
+    if (nil == serviceObj) {
+        serviceObj = [[[NSDictionary alloc] init] autorelease];
+    }
+    
+    if ([serviceObj isKindOfClass:[NSDictionary class]]) {
+        serviceObj = [[[NSMutableDictionary alloc] initWithDictionary:serviceObj copyItems:NO] autorelease];
+        [serviceObj setValue:value forKey:key];
+    }
+    
+    [self save:service data:serviceObj];
+}
+
++ (void) removeValueForKey:(NSString*)key inService:(NSString*)service
+{    
+    // load the service
+    id serviceObj = [self load:service];
+
+    if ([serviceObj isKindOfClass:[NSDictionary class]]) {
+    
+        NSMutableDictionary* mutableDict = [[NSMutableDictionary alloc] initWithDictionary:serviceObj copyItems:NO];
+        [mutableDict removeObjectForKey:key];
+
+        [self save:service data:mutableDict];
+    }
+}
+
++ (id) valueForKey:(NSString*)key inService:(NSString*)service
+{
+    id val = nil;
+    
+    id serviceObj = [self load:service];
+    if ([serviceObj isKindOfClass:[NSDictionary class]]) {
+        val = [serviceObj valueForKey:key];
+    }
+    
+    return val;
+
+}
+
 @end

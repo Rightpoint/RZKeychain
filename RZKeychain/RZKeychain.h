@@ -12,4 +12,8 @@
 + (id)load:(NSString *)service;
 + (void)delete:(NSString *)service;
 
++ (void) setValue:(id)value forKey:(NSString*)key inService:(NSString*)service;
++ (void) removeValueForKey:(NSString*)key inService:(NSString*)service;
++ (id) valueForKey:(NSString*)key inService:(NSString*)service;
+
 @end

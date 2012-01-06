@@ -21,6 +21,7 @@
     [super tearDown];
 }
 
+// test loading, saving and deleting. 
 - (void)test01
 {
     static NSString* const service = @"RZKeychainTest";
@@ -46,6 +47,32 @@
     readTestData = [RZKeychain load:service];
     
     STAssertNil(readTestData, @"Data was not removed from the keychain");
+}
+
+
+// test setting of values. 
+-(void) test02
+{
+    static NSString* const service = @"RZKeychainTest";
+    
+    NSString* testValue =  @"This is my test value";
+    NSString* testKey = @"test key";
+    
+    // write the value. 
+    [RZKeychain setValue:testValue forKey:testKey inService:service];
+    
+    //read the value back in. 
+    NSString* readValue = [RZKeychain valueForKey:testKey inService:service];
+    
+    STAssertTrue([testValue isEqualToString:readValue], @"Value was not saved or read in from the keychain correctly.");
+    
+    // remove the value
+    [RZKeychain removeValueForKey:testKey inService:service];
+    
+    // read the value back in, which should no longer exist. 
+    readValue = [RZKeychain valueForKey:testKey inService:service];
+    
+    STAssertNil(readValue, @"Value was not removed from the keychain correctly");
 }
 
 @end
