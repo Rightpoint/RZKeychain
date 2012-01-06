@@ -2,9 +2,7 @@
 //  RZKeychain.h
 //  RZKeychain
 //
-//  Created by Craig Spitzkoff on 1/6/12.
-//  Copyright (c) 2012 Raizlabs Corporation. All rights reserved.
-//
+//  Original solution by StackOverflow user Anomie: http://stackoverflow.com/q/5251820
 
 #import <Foundation/Foundation.h>
 
