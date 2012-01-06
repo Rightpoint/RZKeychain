@@ -23,11 +23,13 @@
 
 - (void)test01
 {
+    static NSString* const service = @"RZKeychainTest";
+    
     NSDictionary* testData = [NSDictionary dictionaryWithObjectsAndKeys:@"testUsername", @"username", @"testPassword", @"password", nil];
     
-    [RZKeychain save:@"RZKeychainTest" data:testData];
+    [RZKeychain save:service data:testData];
     
-    NSDictionary* readTestData = [RZKeychain load:@"RZKeychainTest"];
+    NSDictionary* readTestData = [RZKeychain load:service];
    
     // make sure the data we read in was same data that we wrote.
     for (NSString* key in testData.allKeys) {
@@ -37,6 +39,13 @@
         STAssertTrue([writtenValue isEqualToString:readValue], @"Data read from the keychain did not match data written to the keychain");
     }
 
+    
+    // delete the info and make sure it is deleted
+    [RZKeychain delete:service];
+    
+    readTestData = [RZKeychain load:service];
+    
+    STAssertNil(readTestData, @"Data was not removed from the keychain");
 }
 
 @end
