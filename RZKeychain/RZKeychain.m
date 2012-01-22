@@ -78,7 +78,7 @@
 
     if ([serviceObj isKindOfClass:[NSDictionary class]]) {
     
-        NSMutableDictionary* mutableDict = [[NSMutableDictionary alloc] initWithDictionary:serviceObj copyItems:NO];
+        NSMutableDictionary* mutableDict = [[[NSMutableDictionary alloc] initWithDictionary:serviceObj copyItems:NO] autorelease];
         [mutableDict removeObjectForKey:key];
 
         [self save:service data:mutableDict];
